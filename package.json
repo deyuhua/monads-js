@@ -1,0 +1,18 @@
+{
+  "name": "fp",
+  "version": "0.0.1",
+  "description": "functional programming with monads ,tail recursion, useful functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "functional",
+    "programming",
+    "monads",
+    "tail",
+    "recursion"
+  ],
+  "author": "deyuhua@gmail.com",
+  "license": "MIT"
+}
