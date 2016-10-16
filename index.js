@@ -10,10 +10,10 @@
 
 'use strict';
 
-import Monods from './monods/index';
+import Monads from './monods/index';
 import Tailcall from './tailcall/index';
 
 export default {
-    Monods,
+    Monads,
     Tailcall
 };

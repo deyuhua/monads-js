@@ -14,10 +14,16 @@ import MONADS from './monads';
 
 export default MONADS(function(monads, value) {
 
-    monads.prototype.is_lazy = true;
-    monads.prototype.bind = function (func, ...rest) {
+    monads.is_lazy = true;
+    monads.bind = function (func, ...rest) {
 
         return (function* () {
+
+            if (!Array.isArray(value)) {
+
+                return yield func(value, ...rest);
+            }
+
             for (const item of value) {
                 yield func(item, ...rest);
             }

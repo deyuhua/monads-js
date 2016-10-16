@@ -15,11 +15,11 @@ import MONADS from './monads';
 export default MONADS((monads, value) => {
 
     if (value === undefined || value === null) {
-        monads.prototype.is_null = true;
-        monads.prototype.bind = function() {
+        monads.is_null = true;
+        monads.bind = function() {
             return monads;
         };
-        monads.prototype.toString = function() {
+        monads.toString = function() {
             return 'Nothing';
         };
     }

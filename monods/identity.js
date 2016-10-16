@@ -14,5 +14,5 @@ import MONADS from './monads';
 
 export default MONADS(function(monads, value) {
 
-    monads.prototype.is_identity = true;
+    monads.is_identity = true;
 });
