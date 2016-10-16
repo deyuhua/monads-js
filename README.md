@@ -34,6 +34,26 @@ function unit(value) {
 
 在ES6规范中要求js引擎都必须实现尾递归优化,但是大部分浏览器厂商都还没完全实现此功能,但是可以采用trampolining方法来polyfill;
 
+## 下载与运行测试
+
+在下载和运行测试前，系统环境需要安装git, node和npm;
+
+### 如何下载
+
+```
+git clone https://github.com/deyuhua/fp.git ./fp &&　cd fp
+```
+
+### 运行测试
+
+```
+npm install
+
+sudo npm install gulp mocha -g
+
+gulp
+```
+
 ## 参考链接
 
 1. [Douglas Crockford关于Monads的演讲](https://www.youtube.com/watch?v=dkZFtimgAcM)
