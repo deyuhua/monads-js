@@ -14,7 +14,7 @@ import MONADS from './monads';
 
 export default MONADS(function(monads, value) {
 
-    monads.prototype.is_list = true;
+    monads.prototype.is_lazy = true;
     monads.prototype.bind = function (func, ...rest) {
 
         return (function* () {
