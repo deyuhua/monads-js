@@ -24,6 +24,15 @@ function unit(value) {
         return func(value, rest);
     };
 
+    monads.lift = function(func, ...rest) {
+
+        const result = this.bind(func, rest);
+
+        return result && result.is_monads ?
+            result :
+            unit(result);
+    };
+
     return monads;
 }
 ```
