@@ -26,7 +26,7 @@ function unit(value) {
 
     monads.lift = function(func, ...rest) {
 
-        const result = this.bind(func, rest);
+        const result = this.bind(func, ...rest);
 
         return result && result.is_monads ?
             result :
@@ -45,7 +45,13 @@ function unit(value) {
 
 ## 下载与运行测试
 
-在下载和运行测试前，系统环境需要安装git, node和npm;
+在下载和运行测试前，系统环境需要安装git, node和npm, gulp;
+
+### 安装gulp
+
+```
+sudo npm install gulp -g
+```
 
 ### 如何下载
 
@@ -66,4 +72,4 @@ gulp
 ## 参考链接
 
 1. [Douglas Crockford关于Monads的演讲](https://www.youtube.com/watch?v=dkZFtimgAcM)
-2. [js中的Monads](https://curiosity-driven.org/monads-in-javascript)
+2. [javascript中的Monads](https://curiosity-driven.org/monads-in-javascript)
